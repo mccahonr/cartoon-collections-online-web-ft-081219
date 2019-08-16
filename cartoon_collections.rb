@@ -21,7 +21,7 @@ def find_the_cheese(array)# code an argument here
   while i < cheese_types.length
     new_array = array.select {|food| food == cheese_types[i]}
     if new_array.size > 0
-      return new_array.join()      
+      return new_array.join()
     end
     i += 1
   end
