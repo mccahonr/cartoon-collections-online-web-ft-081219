@@ -17,5 +17,7 @@ end
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.include?(cheese_types)
+  i = 0
+  while i < cheese_types.length
+    new_array = array.select {|food| food == cheese_types[i]}
 end
